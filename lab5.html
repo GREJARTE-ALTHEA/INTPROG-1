@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 5</title>
+</head>
+<body>
+
+    <form id="userForm">
+        <input type="text" id="nameInput" placeholder="Enter name" value="Althea" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="responseContainer" style="margin-top: 15px;"></div>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nameValue = document.getElementById('nameInput').value;
+
+            fetch('lab5_api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name: nameValue })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('responseContainer').innerText = JSON.stringify(data);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
