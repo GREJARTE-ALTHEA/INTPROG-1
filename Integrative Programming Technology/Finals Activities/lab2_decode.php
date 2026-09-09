@@ -6,6 +6,6 @@ $obj = json_decode($json);
 
 $arr = json_decode($json, true);
 
-echo "Object: " . $obj->name . "<br>";
+echo "Object: " . $obj->name . "\n";
 echo "Array: " . $arr['email'];
 ?>
