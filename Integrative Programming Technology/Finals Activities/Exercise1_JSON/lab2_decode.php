@@ -1,7 +1,7 @@
 
 <?php
 // Declare a JSON string
-$json = '{"name":"John","age":20,"email":"johnmarcel73@gmail.com"}';
+$json = '{"name":"Althea","age":20,"email":"grejartealtheakyle_bsit@plmun.edu.ph"}';
 
 // Convert JSON string into a PHP object
 $object = json_decode($json);
