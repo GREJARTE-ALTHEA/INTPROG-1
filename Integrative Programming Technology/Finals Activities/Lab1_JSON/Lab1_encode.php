@@ -1,11 +1,14 @@
-
 <?php
-// Declare a JSON string
-$json = '{"name":"Althea","age":20,"email":"grejartealtheakyle_bsit@plmun.edu.ph"}';
+// Declare an associative array
+$student = array(
+    "name" => "Althea",
+    "age" => 20,
+    "course" => "IT"
+);
 
-// Convert JSON string into a PHP object
-$object = json_decode($json);
+// Convert the array into a JSON string
+$json = json_encode($student);
 
-// Convert JSON string into a PHP associative array
-$array = json_decode($json, true);
+// Display the JSON string in the browser
+echo $json;
 ?>
