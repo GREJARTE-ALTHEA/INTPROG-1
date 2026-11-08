@@ -1,7 +1,7 @@
 <?php
 // Declare an associative array
 $student = array(
-    "name" => "John",
+    "name" => "Althea",
     "age" => 20,
     "course" => "IT"
 );
