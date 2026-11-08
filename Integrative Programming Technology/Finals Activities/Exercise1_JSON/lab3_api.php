@@ -6,8 +6,8 @@ header('Content-Type: application/json');
 // Create an array containing user profile information
 $user = array(
     "id" => 1,
-    "name" => "john",
-    "email" => "johnmarcel@gmail.com",
+    "name" => "Althea",
+    "email" => "grejartealtheakyle_bsit@plmun.edu.ph",
     "status" => "offline"
 );
 
